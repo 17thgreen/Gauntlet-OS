@@ -1,0 +1,26 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets/
+# Bulk/raw data and local run products
+data/raw/
+datasets/
+archives/
+*.zip
+*.7z
+*.tar
+*.gz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+runs/
+# Local tooling
+__pycache__/
+node_modules/
+.DS_Store
+Thumbs.db
