@@ -8,9 +8,17 @@ Later conversation refinements include 1:1 routing, the limited Promotion Board,
 
 ## What this seed establishes
 
-A reusable written protocol, role charters, artifact schemas, domain-pack guidance and Conductor handoff. Schema field names, generic state mappings and record layouts are implementation conventions introduced to make the requested documentation usable.
+A reusable written protocol, role charters, artifact schemas, domain-pack guidance and an adoption checklist. Schema field names, generic state mappings and record layouts are implementation conventions introduced to make the requested documentation usable.
 
 No backtest, data approval, actor assignment, enforced runtime gate, baseline tag in the live lab, or capital authorization is certified by this seed. Live operational facts require independent verification from that lab.
+
+## Repository creation
+
+- Repository: https://github.com/17thgreen/Gauntlet-OS
+- Visibility: private, verified at creation.
+- Initial repository commit: b080be3d1b3f5908b516e1d1beaec77a3abb7498
+- Institutional documentation seed commit: 20098aead5b779848216aadbdfe132c4d477c671
+- Live-lab adoption remains a separate recorded action.
 
 ## Adoption record to complete in the live lab
 
