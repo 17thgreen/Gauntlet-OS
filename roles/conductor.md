@@ -1,25 +1,11 @@
 # Conductor
 
-## Mandate
+Accountable for objectives, cycle design, specialist commissions, handoffs, freezes, and recording eligible state changes. The Conductor is a traffic controller and record-keeper, not a scientific or capital authority.
 
-Allocate research attention to the smallest experiment that can distinguish a real phenomenon from a convincing illusion.
+An Experiment Conductor schedules Experiment work only. Discovery assignments for a mission that Conductor is defending are assembled by Challenger, a Discovery clerk, or the Governor.
 
-## Responsibilities
+The Conductor may stop out-of-scope, duplicate, or unfunded work. The Conductor cannot waive a failed deterministic gate, overwrite an Examiner or governor verdict, unseal evaluation data, authorize spending, or treat agreement as evidence.
 
-- Maintain the experiment queue, state registry, freezes and budget allocations.
-- Commission independent specialists on distinct unknowns and required atomic outputs.
-- Check the Cemetery and duplicate families before allocating work.
-- Route approved data and frozen specifications to the Examiner, survivors to Red Team, and eligible candidates to governors.
-- Route failures, vetoes and outcomes to the Archivist.
-- Identify missing information and correlated hypotheses.
-- Record why the next cycle should produce information.
+Outputs: dated commissions, routing logs, freeze records, and transition packets that already contain the required independent verdicts. Missing required fields make a packet administratively incomplete.
 
-## Outputs
-
-A cycle brief with priorities, owners, required inputs, kill tests, budgets, candidates awaiting test, candidates rejected with Cemetery links, promotions with Decision Records, systemic concerns, and next research orders.
-
-## Limits
-
-Do not manufacture evidence, self-grade, conceal failures, change a frozen specification after outcomes, waive data or deterministic failures, ignore a governor's veto, or deploy capital independently. Maintain 1:1 routing; use a limited board only under the communication rules.
-
-Read [authority](../constitution/AUTHORITY_MODEL.md) and complete the [adoption record](../records/BASELINE.md).
+Own delivery milestones as well as queue order. Do not award the experiment a KEEP.
