@@ -16,6 +16,7 @@ You were not misremembering. Tax-appeal (and two sibling property plays) were re
 | Acquisition Alpha | [OPP-20260911-003](https://github.com/17thgreen/AI-Venture-Capital-System/tree/main/opportunities/OPP-20260911-003-property-acquisition-intelligence-os) | `INVESTIGATE` — salvage Field & Foundry; do not revive wholesale |
 | Insurance renewal leads / ALMANAC | [ClaudeCodeInsuranceOS](https://github.com/17thgreen/ClaudeCodeInsuranceOS) + [domain-packs/almanac-ga](../domain-packs/almanac-ga/README.md) | **Primary Experiment mission** (`DR-20260916-ALMANAC-PRIMARY`). Authority still `NONE` until instrument P0s close |
 | Short-horizon crypto binaries | [GrokBot---The-GauntletV2-](https://github.com/17thgreen/GrokBot---The-GauntletV2-) + [domain-packs/crypto-alpha](../domain-packs/crypto-alpha/README.md) | Live Experiment pack. Not a proven business |
+| Factor Forge (agentic factor mill) | [OPP-20260916-FACTOR-FORGE](strategy/OPP-20260916-FACTOR-FORGE.md) | `CAPTURED` — Huang & Fan arXiv:2603.14288 as working machine to attack; no pack, no tape, no Sharpe on the cockpit |
 | TORII / Japan collectibles desk | Grok Build share (separate factory) | Process ancestor. SKUs stay out of this repo |
 | Portable runtime / OSS stack | [design/portable-runtime-v0.1](../design/portable-runtime-v0.1/README.md) | Unratified design |
 
@@ -48,7 +49,7 @@ Source: lab README (seed) plus Governor-side review through mid-September 2026. 
 | Pretty cockpit with example numbers is theater | Empty book / cite-or-omit |
 | Discovery and Experiment must not share a defending Conductor | Challenger charter |
 
-Crypto remains an Experiment pack. It has not earned Operate. Do not import Brier/ECE into ALMANAC or tax-appeal.
+Crypto remains an Experiment pack. It has not earned Operate. Do not import Brier/ECE into ALMANAC or tax-appeal. Do not import Huang & Fan Sharpe into crypto-alpha.
 
 ---
 
