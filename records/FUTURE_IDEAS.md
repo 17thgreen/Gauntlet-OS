@@ -1,7 +1,7 @@
 # Future ideas
 
-**Status:** INDEX — not a commission, not evidence, not authority  
-**Rule:** Enthusiasm is not a status. Point at the file that actually holds the idea. Do not duplicate constitutions here.
+**Status:** SURVIVOR INDEX — not a commission, not evidence, not authority  
+**Rule:** Enthusiasm is not a status. Rows arrive only after a Discovery funnel KEEP. Raw and unsure ideas go to [records/inbox/](inbox/README.md). See [DISCOVERY_FUNNEL](../protocols/DISCOVERY_FUNNEL.md).
 
 You were not misremembering. Tax-appeal (and two sibling property plays) were recorded in **AI-Venture-Capital-System**, not in this repo. Insurance leads grew into **ClaudeCodeInsuranceOS** / pack `almanac-ga`. Crypto lives in **GrokBot---The-GauntletV2-**.
 
@@ -21,6 +21,8 @@ You were not misremembering. Tax-appeal (and two sibling property plays) were re
 | Portable runtime / OSS stack | [design/portable-runtime-v0.1](../design/portable-runtime-v0.1/README.md) | Unratified design |
 
 Canonical board for the first three: [AI-Venture-Capital-System/REGISTRY.md](https://github.com/17thgreen/AI-Venture-Capital-System/blob/main/REGISTRY.md).
+
+Inbox (not survivors): [records/inbox/](inbox/README.md). Example still in-flight as a ticket only: [IDEA-20260916-clip-desk](inbox/IDEA-20260916-clip-desk.md).
 
 ---
 
@@ -55,7 +57,7 @@ Crypto remains an Experiment pack. It has not earned Operate. Do not import Brie
 
 ## Parking lot (not yet a registry row)
 
-Add a row here only with a one-line object and a home if it exists. Promote into `AI-Venture-Capital-System/REGISTRY.md` or a domain pack when it deserves a commission.
+These notes are leftovers from before the inbox existed. New items go to inbox first.
 
 | Note | Home |
 |------|------|
@@ -64,8 +66,8 @@ Add a row here only with a one-line object and a home if it exists. Promote into
 
 ---
 
-## How to add an idea
+## How an idea gets here
 
-1. One sentence: who pays, for what, critical uncertainty.
-2. Link or create the real file (VC registry row, or a `CHAL-` / `EC-`).
-3. Status from the VC registry vocabulary. No “we should definitely do this.”
+1. File `records/inbox/IDEA-YYYYMMDD-slug.md` (one sentence, working machine, copy ban, critical uncertainty).
+2. Run [DISCOVERY_FUNNEL](../protocols/DISCOVERY_FUNNEL.md). Verdict is KILL, PIVOT, or KEEP.
+3. KEEP may add a row here and/or a VC `OPP-`. That is still `authority: NONE`.
