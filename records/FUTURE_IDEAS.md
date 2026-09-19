@@ -13,6 +13,7 @@
 | Factor Forge | [OPP-20260916-FACTOR-FORGE](strategy/OPP-20260916-FACTOR-FORGE.md) | `CAPTURED` |
 | TORII | [records/opportunities/TORII](opportunities/TORII/README.md) | PREPARED. No fleet |
 | Lag Desk | [records/opportunities/LAG-DESK](opportunities/LAG-DESK/README.md) | `HUNT / NOT A GO` — proof kit ready. No fleet. No Grok on the recorder. 48h HL log not yet run |
+| Univer Office Harness | [design/univer-office-harness](../design/univer-office-harness/README.md) | `KIT / NOT A BUSINESS` — https://github.com/dream-num/univer — implement only as Examiner artifact runtime |
 | Portable runtime | [design/portable-runtime-v0.1](../design/portable-runtime-v0.1/README.md) | Unratified design |
 
 Inbox only: [IDEA-20260916-clip-desk](inbox/IDEA-20260916-clip-desk.md).
