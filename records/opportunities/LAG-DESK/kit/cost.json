@@ -1,0 +1,30 @@
+{
+  "universe": ["BTC", "ETH", "NEAR", "ONDO", "WLD", "APT", "WIF"],
+  "controls": ["BTC", "ETH"],
+  "candidates": ["NEAR", "ONDO", "WLD", "APT", "WIF"],
+  "poll_seconds": 5,
+  "persist_seconds": 30,
+  "slip_bps": 2.0,
+  "min_touch_usd": 500,
+  "max_book_frac": 0.2,
+  "hit_residue_bps": 0.0,
+  "go_min_hits": 20,
+  "go_min_sessions": 10,
+  "fees_bps": {
+    "hl_taker": 4.5,
+    "okx_taker": 5.0,
+    "bitget_taker": 5.5
+  },
+  "contracts": {
+    "BTC":  { "hl": "BTC",  "okx": "BTC-USDT-SWAP",  "bitget": "BTCUSDT" },
+    "ETH":  { "hl": "ETH",  "okx": "ETH-USDT-SWAP",  "bitget": "ETHUSDT" },
+    "NEAR": { "hl": "NEAR", "okx": "NEAR-USDT-SWAP", "bitget": "NEARUSDT" },
+    "ONDO": { "hl": "ONDO", "okx": "ONDO-USDT-SWAP", "bitget": "ONDOUSDT" },
+    "WLD":  { "hl": "WLD",  "okx": "WLD-USDT-SWAP",  "bitget": "WLDUSDT" },
+    "APT":  { "hl": "APT",  "okx": "APT-USDT-SWAP",  "bitget": "APTUSDT" },
+    "WIF":  { "hl": "WIF",  "okx": "WIF-USDT-SWAP",  "bitget": "WIFUSDT" },
+    "PEPE": { "hl": "kPEPE", "okx": "PEPE-USDT-SWAP", "bitget": "PEPEUSDT", "hl_mult": 1000 }
+  },
+  "rules_frozen": true,
+  "note": "Do not edit fees or thresholds after seeing P&L. PEPE is mapped only as a unit-test fixture — not in universe."
+}
