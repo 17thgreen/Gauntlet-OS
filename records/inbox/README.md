@@ -9,3 +9,5 @@ One `IN_FLIGHT` cheap test at a time unless run-config says otherwise. ALMANAC a
 ## Filed ideas
 
 - [Creator Token Operations Studio](IDEA-20260917-creator-token-operations.md) — `INBOX / DRAFT`; [ten-page operational playbook](Gauntlet_Creator_Token_Operations_Playbook_2026-09-17.docx), dated 2026-09-17. Pending independent review; authority `NONE`.
+
+- [Experiment: Single-Shot Sports Betting Application](IDEA-20260920-single-shot-sports-betting-application.md) — `INBOX / DRAFT`; [full revised build challenge](CHALLENGE-20260920-single-shot-sports-betting-application.md), dated 2026-09-20. Includes README and execution-evidence requirements; no validated strategy result.
