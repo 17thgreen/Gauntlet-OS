@@ -1,0 +1,84 @@
+name: inbox-log
+
+# Example workflow. Copy it to .github/workflows/inbox-log.yml in the repository
+# that holds the inbox PRs, label each inbox PR `agent-inbox`, and create an
+# `inbox/log` branch (an orphan branch with a README is enough).
+#
+# It copies every comment on an agent inbox PR into the `inbox/log` branch, one
+# file per comment: comments/<YYYY-MM-DD>/<comment id>.json.
+# Protocol: protocols/AGENT_INBOX.md. Consumer: design/agent-inbox-chat/.
+#
+# The comment body is untrusted text. It is read from the event file by the
+# script below and is never interpolated into a shell command. One file per
+# comment means simultaneous comments never conflict, so there is no
+# concurrency group, which would drop queued runs.
+on:
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    if: >-
+      github.event.issue.pull_request &&
+      contains(github.event.issue.labels.*.name, 'agent-inbox')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Write the comment to inbox/log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, json, os, time, urllib.error, urllib.request
+
+          event = json.load(open(os.environ["GITHUB_EVENT_PATH"]))
+          comment, issue = event["comment"], event["issue"]
+          msg = {
+              "cid": int(comment["id"]),
+              "pr": int(issue["number"]),
+              "created_at": comment["created_at"],
+              "updated_at": comment.get("updated_at") or comment["created_at"],
+              "body": comment.get("body") or "",
+          }
+          path = "comments/%s/%d.json" % (msg["created_at"][:10], msg["cid"])
+          url = "https://api.github.com/repos/%s/contents/%s" % (os.environ["GITHUB_REPOSITORY"], path)
+          headers = {
+              "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          }
+
+          def call(method, target, data=None):
+              body = None if data is None else json.dumps(data).encode()
+              req = urllib.request.Request(target, data=body, method=method, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as resp:
+                  return json.load(resp)
+
+          content = base64.b64encode((json.dumps(msg, ensure_ascii=False, indent=1) + "\n").encode()).decode()
+          for attempt in range(5):
+              sha = None
+              try:
+                  sha = call("GET", url + "?ref=inbox/log")["sha"]
+              except urllib.error.HTTPError as err:
+                  if err.code != 404:
+                      raise
+              put = {
+                  "message": "inbox log: comment %d on #%d [skip ci]" % (msg["cid"], msg["pr"]),
+                  "content": content,
+                  "branch": "inbox/log",
+              }
+              if sha:
+                  put["sha"] = sha
+              try:
+                  call("PUT", url, put)
+                  print("logged", path)
+                  break
+              except urllib.error.HTTPError as err:
+                  if err.code in (409, 422) and attempt < 4:
+                      time.sleep(2 * (attempt + 1))
+                      continue
+                  raise
+          PY

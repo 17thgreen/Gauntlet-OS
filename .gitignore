@@ -19,6 +19,9 @@ archives/
 *.h5
 *.hdf5
 runs/
+# Agent inbox chat: local transcripts and generated database documents
+design/agent-inbox-chat/messages.json
+design/agent-inbox-chat/out/
 # Local tooling
 __pycache__/
 node_modules/
