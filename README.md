@@ -20,7 +20,7 @@ Prepared ideas carry a playbook and a venture challenge. That pair is not a flee
 1. Constitution, [lifecycle](constitution/LIFECYCLE.md), authority, evidence, promotion.
 2. Role charters including [Challenger](roles/challenger.md) and [Operate](roles/operate.md).
 3. Schemas, including [Experiments](schemas/EXPERIMENT.md) (four fields).
-4. [Discovery funnel](protocols/DISCOVERY_FUNNEL.md), [Challenge](protocols/CHALLENGE.md), [Playbook + Venture Challenge](protocols/PLAYBOOK_AND_CHALLENGE.md).
+4. [Discovery funnel](protocols/DISCOVERY_FUNNEL.md), [Challenge](protocols/CHALLENGE.md), [Playbook + Venture Challenge](protocols/PLAYBOOK_AND_CHALLENGE.md), [Agent inbox](protocols/AGENT_INBOX.md) (trial: cross-model handoffs over GitHub; see [first contact](records/strategy/2026-10-09-cross-model-inbox-first-contact.md)).
 5. Domain packs: [crypto-alpha](domain-packs/crypto-alpha/README.md), [almanac-ga](domain-packs/almanac-ga/README.md).
 6. [FUTURE_IDEAS](records/FUTURE_IDEAS.md) (survivors). Inbox for raw tickets.
 7. Prepared example: [TORII](records/opportunities/TORII/README.md).
